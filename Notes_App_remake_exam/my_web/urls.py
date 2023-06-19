@@ -5,7 +5,7 @@ from Notes_App_remake_exam.my_web.views import index, add_note, edit_note, delet
 
 urlpatterns = (
     path('', include([
-        path('', index, name='index,'),
+        path('', index, name='index'),
         path('add/', add_note, name='add-note,'),
 
         path('edit/<int:pk>/', edit_note, name='edit-note,'),
@@ -28,5 +28,4 @@ http://localhost:8000/details/1 - note details page
 
 http://localhost:8000/profile - profile page
 http://localhost:8000/profile/create/ - profile page
-
 """
