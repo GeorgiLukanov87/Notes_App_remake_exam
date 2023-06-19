@@ -16,7 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'Notes_App_remake_exam.my_web.urls',
+    'Notes_App_remake_exam.my_web',
 ]
 
 MIDDLEWARE = [

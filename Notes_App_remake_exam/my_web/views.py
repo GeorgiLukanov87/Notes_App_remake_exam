@@ -13,15 +13,15 @@ def add_note(request):
     return render(request, 'note-create.html')
 
 
-def edit_note(request):
+def edit_note(request, pk):
     return render(request, 'note-edit.html')
 
 
-def delete_note(request):
+def delete_note(request, pk):
     return render(request, 'note-delete.html')
 
 
-def details_note(request):
+def details_note(request, pk):
     return render(request, 'note-details.html')
 
 
