@@ -2,27 +2,17 @@
 {% block content %}
 
         <div class="body">
-            <!--headings-->
             <h1>Add Note</h1>
-            <!--headings-->
-
-            <!--note data form-->
             <div class="form">
                 <form method="POST">
                     <input type="hidden" name="csrfmiddlewaretoken" value="HUrRfZ1Xv8I1kg0RCRhg5I8sTJMRfcaLEI9Pf4LGjQXUjsQgoxLnWAleb0K01njw" />
-                    <label for="name">Title</label>
-                    <input type="text" name="title" maxlength="50" required="" id="id_title" />
 
-                    <label for="content">Content</label>
-                    <textarea name="description" cols="40" rows="10" required="" id="id_description"></textarea>
-
-                    <label for="image_url">Link to Image</label>
-                    <input type="url" name="image_url" maxlength="200" required="" id="id_image_url" />
+                    {{ form }}
+                    {% csrf_token %}
 
                     <input type="submit" value="Publish" />
                 </form>
             </div>
-            <!--end note data form-->
         </div>
 
 {% endblock %}
